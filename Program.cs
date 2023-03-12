@@ -22,11 +22,12 @@ namespace Day27AddBookUsingFileIO
             myAddressBook.PrintContacts();
 
 
-            string path = "C:\\Users\\Shiva027\\Desktop\\BridgeLabSolution\\Day27AddBookUsingFileIO\\Day27AddBookUsingFileIO\\Sample.txt";
+             string path = "C:\\Users\\Shiva027\\Desktop\\BridgeLabSolution\\Day27AddBookUsingFileIO\\Day27AddBookUsingFileIO\\Sample.txt";
+            string path2 = "C:\\Users\\Shiva027\\Desktop\\BridgeLabSolution\\Day27AddBookUsingFileIO\\Day27AddBookUsingFileIO\\TextFile1.csv";
 
-
-            myAddressBook.WriteToFile(path);
+             myAddressBook.WriteToFile(path);
             //myAddressBook.ReadFromFile(path);
+            myAddressBook.ExportToCsv(path2);
         }
     }
 }
